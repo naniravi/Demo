@@ -133,7 +133,18 @@ IF SOME THING GOES WRONG SUPPORT TEAM WILL GET THE NOTIFICATION THEY WILL CHECK 
 
 If their is issuie with the application they are going to use some ticketing tools (Service Now, Jira ) they will write the issuie in the jira & assign to the Developers 
 
-Then Devloper will work on this issuie & immeiatly they will pus the code to github repo then jenkins will process this all the steps & going to deploy 
+Then Devloper will work on this issuie & immeiatly they will pus the code to github repo then jenkins will process this all the steps & going to deploy
+
+
+
+
+Molothic Application ===> suppose we are developing one  ICICI application in that we have Admin module, login module, reports module, Usermodule these are going to create one package   
+-----------------------
+No need for Docker & Kubernetes 
+
+
+Microservice Architecture ==> In micro service Architecture each module we are going to create seperate package & we are using seperate databases also but now a days 99% are using Microservice archecture only so we should use Doker & K8s      
+----------------------------
 
 
 
