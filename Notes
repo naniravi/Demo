@@ -1,0 +1,145 @@
+DevOps is not tools its is methodology 
+
+Why we need to learn devops 
+
+
+Waterfal model is most popular which we aere using Earlier 
+1 Requiremats==>Arch/TL
+2 Design ==> TL/Arch
+3 Implementation ==> Developer
+4 Testing==> QA team 
+5 Deployment ==> Middleware Admin Team
+6 Maintenance ==> Support Team 
+
+Draw backs 
+The resouce utilization is very poor 
+
+
+Agile metholodology
+---------------------------
+
+We aregoing to follow scrum model we are going to follow sprints( Time Duration)
+Sprint1
+sprint2 
+sprint3 
+
+Each sprint Duration is 2 weeks ( 10 working days)
+
+Sprint 1 Team velocity is 100%
+4 dev
+1 QA
+1 DBA
+
+we are getting 8 Features for this sprint1 In this 10 days , we are going to develop, test, deployement should be happen & also we are going to et feed back from the clint if any changes 
+
+Once we deployed we need to inform to the client , we have deployed 8 features 
+
+Resouce Utilization is more & deployment frequency got increased 
+
+Insted of doing deployment manual we follow DevOps Method
+
+
+Devops formed with 2 words 
+
+Dev==> Dev team 
+Ops==> ops team
+
+Dev team & Ops teams both are workig together to release quality product  
+
+DevOps is not a tool & it is not techology it is devOps Methodology
+
+GitHub
+GitLab
+BitBucket
+SVN 
+TFS
+CVS
+
+After creating the repo we are sharing the repo url to the development team then developer will push/pull  the code 
+
+Once they push to remote repo we need to take the code & delop in Application Server,If you take the source code directly from the github repo we cannot deloy 1st we need to create package 
+
+Maven 
+========
+
+For creating packages we are going to use build tools Java Based Build Tools like maven 
+           Ant 
+           Gradle
+
+As a developer they are going to delvelop the (source code & also the Buils script & Unit Test cases )
+
+Using Build script we are going to build the packages that may be jar/ war/ear 
+
+All this they are push to the remote repository
+
+
+SonarQube ( static Code Analysys tool)
+==========================================
+
+1 Before going to deploy our code we need to give the code review , code review is nothing but developers  are followed  the source code  with all the standards are not.
+
+
+Nexus
+=======
+
+1 After creating package  & before deployng into the application servers we need to take the backup for futer reference, we are going to use some artificatory repositories  
+
+2 In Nexus repo we are going to store the build artfats for the further reference 
+
+
+Jenkins
+============
+
+Then we are going to integrate all the tools 
+now we are integrating all toos with jenkins & we are going to create Job 
+
+2. we are going to create job , what job will do it will do the automation 
+
+3. As Soon as Developer push the code to the source code management , Jenkins Job will tke this code, it will run the unit test cases , once unit test cases are passed it will execute sonarqube report.
+
+4. Then we will package, that package is going to upload in Artfactory repositary tool then we are going to deploy in Aplication server then we will get the notification also wheather it is success or failure
+
+
+5.In real time we are going to deploy in multiple instace why?
+
+If some thing goes wrong in one server  Due to heavy utilization many people are staring that one server will crash 
+
+To make our application 0 down time / 24 hours available we are going to deploy the same instanse in multiple servers 
+
+
+6. Installing some update servers / Applications  should not be in DOWN TIME using JENKINS we are going to achive , THEN AE ARE GOING TO USE DEPLYMENT TOOLS LIKE URBAN CODE DEPLOY, ANSIBLE ( ANSIBLE IS DEPLOMENT TOOL & ALSO CONFIGURATION MANAGEMEMENT TOOL ALSO ) 
+
+Using Ansible we can deply & do the Configuratio managemt tool also 
+
+What jenkins do , Jenkins will give the updates to the deploymemnt tool , deplyment tool will rool out the updates to the Application servers with out down time 
+
+
+Moniter the Application 
+==========================
+Many people are using that application some thing goes wrong, we are using New Relic 
+      App Dynamics 
+      promethous 
+      Grafana
+      Data Dog
+
+We are going to configure the application in this monitering tools this monitering tools are going to moiniter continuously  with the Application  if some thing goes wrong it will automatically create Insident to the Support team 
+
+Who is support team ?
+
+Support team will work 24/7 
+
+IF SOME THING GOES WRONG SUPPORT TEAM WILL GET THE NOTIFICATION THEY WILL CHECK IF THEIR IS ANY ISSUIE WITH THE APPLICATION / INFRACTURE ISSUIE  
+
+
+If their is issuie with the application they are going to use some ticketing tools (Service Now, Jira ) they will write the issuie in the jira & assign to the Developers 
+
+Then Devloper will work on this issuie & immeiatly they will pus the code to github repo then jenkins will process this all the steps & going to deploy 
+
+
+
+ 
+
+ 
+  
+
+
